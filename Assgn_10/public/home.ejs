@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Home Page</title>
+</head>
+<body id="home-page">
+  <header id="main-header">
+    <nav id="main-nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="/logout">Logout</a></li>
+        <% if (username) { %>
+          <label style="color: black; background-color: aquamarine;">User Name: <%= username %></label>
+          <a href="/logout" style="margin-left: 20px;">Logout123</a>
+        <% } %>
+      </ul>
+      
+    </nav>
+  </header>
+
+  <section id="home">
+    <h1>THIS IS DASHBOARD</h1>
+   
+  </section>
+
+ 
+
+</body>
+</html>

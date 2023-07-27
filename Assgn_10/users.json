@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "username": "n",
+      "password": "n",
+      "name": "John Doe"
+    },
+    {
+      "username": "ab",
+      "password": "ab",
+      "name": "Jane Doe"
+    },
+    {
+      "email": "admin@gmail.com",
+      "name": "admin",
+      "password": "admin"
+    },
+    {
+      "email": "pvp",
+      "name": "pvp",
+      "password": "pvp"
+    },
+    {
+      "email": "msdhoni@bcci.com",
+      "name": "msdhoni",
+      "password": "123"
+    },
+    {
+      "email": "amey@yahoo",
+      "name": "amey",
+      "password": "123"
+    }
+  ]
+}
