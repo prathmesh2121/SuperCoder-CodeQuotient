@@ -1,0 +1,15 @@
+{
+    "products": [
+      {
+        "productName": "Tata Harrier",
+        "price": 200000,
+        "description": "Strongest Car"
+      },
+      {
+        "productName": "IPhone 14 Pro",
+        "price": 140000,
+        "description": "From Apple inc"
+      }
+    ]
+  }
+  

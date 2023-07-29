@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Home Page</title>
+</head>
+<body id="home-page">
+  <header id="main-header">
+    <nav id="main-nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <% if (username) { %>
+          <label style="color: black; background-color: aquamarine;">User Name: <%= username %></label>
+          <a href="/logout" style="margin-left: 20px;">Logout</a>
+        <% } %>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Empty placeholder for the data -->
+  <div id="data-placeholder"></div>
+
+  <!-- Add a script to fetch and render the data -->
+  <script>
+    fetch('/data')
+      .then(response => response.json())
+      .then(data => {
+        const dataContainer = document.getElementById('data-placeholder');
+        const products = data.products;
+
+        // Render the data in the container
+        products.forEach(product => {
+          const item = document.createElement('div');
+          item.innerHTML = `
+            <strong>Product Name:</strong> ${product.productName}<br>
+            <strong>Price:</strong> ${product.price}<br>
+            <strong>Description:</strong> ${product.description}<br>
+            <hr>
+          `;
+          dataContainer.appendChild(item);
+        });
+      })
+      .catch(error => console.error('Error fetching data:', error));
+  </script>
+
+</body>
+</html>
