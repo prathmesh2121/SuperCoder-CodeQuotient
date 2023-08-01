@@ -1,0 +1,135 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-side {
+  flex: 1;
+}
+
+.right-side {
+  flex: 1;
+  padding-left: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #31a24c;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+label {
+  font-size: 16px;
+  color: #333;
+  flex: 1;
+  overflow-wrap: break-word;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #f1f1f1;
+  color: #333;
+  resize: none;
+  margin-bottom: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #31a24c;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #247a39;
+}
+
+.delete-btn {
+  padding: 5px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #d32f2f;
+}
+
+.priority-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.priority-select {
+  padding: 8px;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  color: #333;
+}
+
+.priority-select option {
+  color: #333;
+  background-color: #f8f8f8;
+}
+
+/* Additional CSS for the task container and image */
+.task-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.task-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
