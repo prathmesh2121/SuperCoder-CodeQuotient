@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left-side">
+      <h1>Available Tasks</h1>
+      <ul id="task-list">
+        <!-- Task items will be added here dynamically -->
+      </ul>
+    </div>
+    <div class="right-side">
+      <h1>Task Details</h1>
+      <textarea id="task-details" rows="10" placeholder="Enter task details here..."></textarea>
+      
+      <center>
+        <div class="priority-container">
+          <label for="priority">Priority:</label>
+          <select id="priority" class="priority-select">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+        </div>
+      </center>
+      <br>
+      <center><button id="submitTask">Submit</button></center>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
